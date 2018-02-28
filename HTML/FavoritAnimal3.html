@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Miles</title>
@@ -7,6 +7,11 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+            });
+        </script>         
     </head>
     <body style="background-color:Black;" data-spy="scroll" data-target=".navbar" data-offset="50">
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -35,14 +40,19 @@
         <br>
         <div class="container" style="background-color:black;" id="section1">
             <div>
-                 <button type="button" class="btn btn-danger"><a href="https://en.wikipedia.org/wiki/Mongoose" data-toggle="tooltip" title="Wiki" title="Header" data-toggle="popover" data-content="Info on mongoose">Wiki page</a></button>
-                 <button type="button" class="btn btn-danger"><a href="https://www.nationalgeographic.com/animals/mammals/group/mongooses/" data-toggle="tooltip" title="Nat Geo" data-toggle="tooltip" title="Wiki" title="Header" data-toggle="popover" data-content="Info on mongoose">Nat Geo</a></button>
-                 <button type="button" class="btn btn-danger"><a href="https://www.britannica.com/animal/mongoose" data-toggle="tooltip" title="Britanica"data-toggle="tooltip" title="Wiki" title="Header" data-toggle="popover" data-content="Info on mongoose">Britanica</a></button>
+                 <button type="button" class="btn btn-danger"><a href="https://en.wikipedia.org/wiki/Mongoose" data-toggle="tooltip" title="Wiki">Wiki page</a></button>
+                 <button type="button" class="btn btn-danger"><a href="https://www.nationalgeographic.com/animals/mammals/group/mongooses/" data-toggle="tooltip" title="Nat Geo" data-toggle="tooltip">Nat Geo</a></button>
+                 <button type="button" class="btn btn-danger"><a href="https://www.britannica.com/animal/mongoose" data-toggle="tooltip" title="Britanica"data-toggle="tooltip" title="Wiki">Britanica</a></button>
             </div>
             <div class="jumbotron" style="color:black; background-color:red;">
                 <h1>Mongoose</h1>
                 <h2>Herpestidae</h2>
             </div>
+        </div>
+        <div style="color:red;">
+            <button type="button" class="btn btn-danger"><a href="#" data-toggle="popover" title="Popover Header" data-content="Mongoose are cute animals">Random button</a></button>
+            <button type="button" class="btn btn-danger"><a href="#" data-toggle="popover" title="Popover Header" data-content="Mongoose are cute animals">Random button</a></button>
+            <button type="button" class="btn btn-danger"><a href="#" data-toggle="popover" title="Popover Header" data-content="Mongoose are cute animals">Random button</a></button>
         </div>
         <br>
         <br>
